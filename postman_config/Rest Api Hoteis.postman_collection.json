@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "1c71053c-b95e-4551-a2eb-2aea7fa309cd",
+		"name": "Rest Api Hoteis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/hoteis",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/hoteis",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"hoteis"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/hoteis/{hotel_id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/hoteis/victor",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"hoteis",
+						"victor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/hoteis/{hotel_id}",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2MDk1NzUzNSwianRpIjoiYWY2MTZlOTktMmY5NC00YTA3LTkyZDctNzQ2OTY5ZWVjZjE4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNjYwOTU3NTM1LCJleHAiOjE2NjA5NTg0MzV9.F8Omm9Hoy0cj5x2Ug_qHwTL9vj7WnyPV_AyqqvtWJvM",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Carlos Hotel\",\n    \"estrelas\": 3.8,\n    \"diaria\": 659.1,\n    \"cidade\": \"Campinas\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/hoteis/carlos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"hoteis",
+						"carlos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/hoteis/{hotel_id}",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2MDk1NzUzNSwianRpIjoiYWY2MTZlOTktMmY5NC00YTA3LTkyZDctNzQ2OTY5ZWVjZjE4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNjYwOTU3NTM1LCJleHAiOjE2NjA5NTg0MzV9.F8Omm9Hoy0cj5x2Ug_qHwTL9vj7WnyPV_AyqqvtWJvM",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Carlos EDITADO Hotel\",\n    \"estrelas\": 3.8,\n    \"diaria\": 659.1,\n    \"cidade\": \"Campinas\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/hoteis/carlos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"hoteis",
+						"carlos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/hoteis/{hotel_id}",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2MDk1OTE2NiwianRpIjoiOThiMzA2YzctYjNmOS00NDA4LTljNmEtZDI1YjhhZjVmZjE5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNjYwOTU5MTY2LCJleHAiOjE2NjA5NjAwNjZ9.CTcqmJei_vT5YwEGTf3kK9t412NygkYu_0XkRg-aBUo",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/hoteis/carlos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"hoteis",
+						"carlos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"login\": \"ana\",\n    \"senha\": \"asdf\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2MDk1OTAzMywianRpIjoiNWY5ODZjYjgtZjkxZi00Y2RmLTg1YzgtNDFjMDhjN2Q2YWIzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNjYwOTU5MDMzLCJleHAiOjE2NjA5NTk5MzN9.F5XBhe-5-me6Z9WEKlvgnLMG5r1pUcyRpK2T20HkPz8",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5000/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/cadastro",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"login\": \"ana\",\n    \"senha\": \"asdf\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/cadastro",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"cadastro"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
